@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema::create('day', function (Blueprint $table) {
+        Schema::create('days', function (Blueprint $table) {
             $table->bigIncrements('day_id');
             $table->date('date');
             $table->integer('order');

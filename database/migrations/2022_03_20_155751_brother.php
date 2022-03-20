@@ -14,11 +14,12 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema::create('brother', function (Blueprint $table) {
+        Schema::create('brothers', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('brother_id');
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('email');
             $table->string('phone');
             $table->string('password');
 

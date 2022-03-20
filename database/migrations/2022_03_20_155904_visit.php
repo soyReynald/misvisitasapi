@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema::create('visit', function (Blueprint $table) {
+        Schema::create('visits', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('visit_id');
             $table->string('first_name');
@@ -26,7 +26,7 @@ return new class extends Migration
 
             $table->timestamps();
 
-            $table->foreign('brother_id')->references('brother_id')->on('brother');
+            $table->foreign('brother_id')->references('brother_id')->on('brothers');
         });
     }
 

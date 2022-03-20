@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema::create('assistance', function (Blueprint $table) {
+        Schema::create('assistances', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('assistance_id');
             $table->bigInteger('visit_id')->unsigned();
@@ -23,9 +23,9 @@ return new class extends Migration
 
             $table->timestamps();
 
-            $table->foreign('visit_id')->references('visit_id')->on('visit');
-            $table->foreign('secretary_id')->references('brother_id')->on('brother');
-            $table->foreign('day_id')->references('day_id')->on('day');
+            $table->foreign('visit_id')->references('visit_id')->on('visits');
+            $table->foreign('secretary_id')->references('brother_id')->on('brothers');
+            $table->foreign('day_id')->references('day_id')->on('days');
         });
     }
 
