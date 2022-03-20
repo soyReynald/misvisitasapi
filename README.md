@@ -1,7 +1,6 @@
 # misvisitasapi
 Adventist visits PHP Restfull APIs
 
->>>>>>> f16a86b805c0cd95f05d883aa7b2ed25b2c68c25
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
