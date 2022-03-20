@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\DayController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::controller(DayController::class)->group(function () {
+    Route::get('/days', 'index');
+    Route::post('/days', 'store');
+    Route::get('/days/{id}', 'show');
+});
+
